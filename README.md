@@ -1,13 +1,21 @@
 # calculadora-financiera
 Desarrollo de una Aplicación Web para Calcular Anualidades, Gradientes, Amortización y Capitalización desarrollada en Html, Css, JavaScript
 
- ![Descripción de la imagen](/assets/img/portfolio/img1.png)
+ ![Descripción de la imagen](img/img1.png)
 
 # Capturas de los resultados Obtenidos
 
- ![Descripción de la imagen](/assets/img/portfolio/img2.png)
+# Sección Calculadoras
 
- ![Descripción de la imagen](/assets/img/portfolio/img3.png)
+## Items
+- Anualidad vencida y Anticipada (Valor Presente; Futuro; Anualidad con Valor Presente, con Valor Futuro; Pagos/ Cuotas con Valor Presente, con valor Futuro)
+- Gradiente Lineal Creciente y Decreciente
+  
+ ![Descripción de la imagen](/img//img2.png)
 
- ![Descripción de la imagen](/assets/img/portfolio/img4.png)
+ ![Descripción de la imagen](/img/img3.png)
+
+- Amortización y Capitalización
+- 
+ ![Descripción de la imagen](/img/img4.png)
 
