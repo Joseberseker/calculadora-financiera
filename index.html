@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Calculadora financiera</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="js/enviar_datos_av_vp.js"></script>
+    <script type="text/javascript" src="js/enviar_datos_av_vf.js"></script> -->
+    <script type="text/javascript" src="js/calculos_financieros.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Calculadora Financiera</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#calculadoras">Calculadoras</a></li>
+                    <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#contact">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Bienvenid@s </h1>
+            <br>
+            <h3>A la Calculadora de Anualidades, Gradientes, Amortización y Capitalización</h3>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Desarrollada por: Jose Luis Ahumada</p>
+            <p class="masthead-subheading font-weight-light mb-0">Desarrollador de Software</p>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="calculadoras">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Calculadoras</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <br>
+    
+            <br>
+            <br>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h2>Anualidad Vencida</h2>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Anualidades.webp" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h2>Anualidad Anticipada</h2>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Anualidades.webp" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h2>Gradiente Lineal creciente</h2>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Gradientes.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h2>Gradiente Lineal Decreciente</h2>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Gradientes.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h2>Amortización</h2>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Amortizacion.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <h2>Capitalización</h2>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Capitalizacion.jpg" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+           
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-3 text-center text-white">
+        <div class="container">Esta plantilla web la encuentras en: <a href="https://startbootstrap.com/theme/freelancer">Start Bootstrap</a></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Anualidad vencida
+                                </h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Anualidades.webp" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">La anualidad vencida es aquel abono, retiro o depósito frecuente que se efectúa al final de cada periodo de pago pactado.</p>
+
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Valor presente (VP)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_a">Anualidad (A):</label>
+                                                <input type="float" class="form-control" id="anualidad" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="valor_presente_vencida();">
+                                                Calcular valor
+                                            </button>
+                                            <div id='respuesta'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Valor futuro (VF)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_a">Anualidad (A):</label>
+                                                <input type="float" class="form-control" id="anualidad1" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes1" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo1" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="valor_futuro_vencida();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta1'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anualidad con Valor Presente(AVP)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_vp">Valor Presente (VP):</label>
+                                                <input type="float" class="form-control" id="valor_presente" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes2" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo2" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="anualidad_valor_presente_vencida();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta2'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anualidad con Valor Futuro(AVF)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_vd">Valor Futuro (VF):</label>
+                                                <input type="float" class="form-control" id="valor_futuro" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes3" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo3" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="anualidad_valor_futuro_vencida();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta3'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pagos/Cuotas con VP (CVP)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_a">Anualiadad (A):</label>
+                                                <input type="number" class="form-control" id="anualidad2" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_vp">Valor presente (VP):</label>
+                                                <input type="float" class="form-control" id="valor_presente1" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti">Tasa de interés (decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes4" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="pagos_valor_presente_vencida();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta4'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pagos/Cuotas con VF (CVF)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_a5">Anualiadad (A):</label>
+                                                <input type="number" class="form-control" id="anualidad6" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_vf5">Valor futuro (VF):</label>
+                                                <input type="float" class="form-control" id="valor_futuro2" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t5">Tasa de interés (decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes10" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="pagos_valor_futuro_vencida();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta10'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Anualidad
+                                    anticipada</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Anualidades.webp" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Es una serie de retiros, depósitos o pagos que se efectúan de forma regular, ya sea en periodos anuales, mensuales, trimestrales, semestrales o de otro tipo. 
+                                </p>
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Valor presente (VP)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_a1">Anualidad (A):</label>
+                                                <input type="float" class="form-control" id="anualidad3" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti1">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes5" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t1">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo4" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="valor_presente_anticipada();">
+                                                Calcular valor
+                                            </button>
+                                            <div id='respuesta5'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Valor futuro (VF)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_a2">Anualidad (A):</label>
+                                                <input type="float" class="form-control" id="anualidad4" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti2">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes6" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t2">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo5" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="valor_futuro_anticipada();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta6'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anualidad con Valor Presente(AVP)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_vp3">Valor Presente (VP):</label>
+                                                <input type="float" class="form-control" id="valor_presente2" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti3">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes7" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t3">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo6" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="anualidad_valor_presente_anticipada();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta7'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Anualidad con Valor Futuro(AVF)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_vfa">Valor Futuro (VF):</label>
+                                                <input type="float" class="form-control" id="valor_futuro1" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes8" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_t">Tiempo(meses):</label>
+                                                <input type="number" class="form-control" id="tiempo7" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="anualidad_valor_futuro_anticipada();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta8'></div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+
+                                <div class="card" style="width: 100%;">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pagos/Cuotas con VP (CVP)</h5>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label for="lbl_a3">Anualiadad (A):</label>
+                                                <input type="number" class="form-control" id="anualidad5" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_vp">Valor presente (VP):</label>
+                                                <input type="float" class="form-control" id="valor_presente3" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="lbl_ti">Tasa de interés (decimal):</label>
+                                                <input type="float" class="form-control" id="tasa_interes9" required>
+                                            </div>
+                                            <br>
+                                            <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                onclick="pagos_valor_presente_anticipada();">
+                                                Calcular valor
+                                            </button>
+
+                                            <div id='respuesta9'></div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Gradiente lineal Creciente</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Gradientes.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Es un valor ubicado en el presente, que resulta de sumar los valores presentes de una serie de pagos que aumentan cada periodo una cantidad constante (G)
+                                </p>
+
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Valor presente (VP)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a_1">Anualidad (A):</label>
+                                                    <input type="float" class="form-control" id="anualidad_1" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti_1">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_1"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo_1" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Gradiente(constante G):</label>
+                                                    <input type="number" class="form-control" id="gradiente_1" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="valor_presente_gradiente_creciente();">
+                                                    Calcular valor
+                                                </button>
+                                                <div id='respuesta_1'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <br>
+                                    <br>
+
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Valor futuro (VF)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a_1">Anualidad (A):</label>
+                                                    <input type="float" class="form-control" id="anualidad_2" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti_1">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_2"required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo_2" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Gradiente(constante G):</label>
+                                                    <input type="number" class="form-control" id="gradiente_2" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="valor_futuro_gradiente_creciente();">
+                                                    Calcular valor
+                                                </button>
+                                                <div id='respuesta_2'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                    <!-- parte comentada -->
+                                    <!-- <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Anualidad con Valor Presente(AVP)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_vp3">Valor Presente (VP):</label>
+                                                    <input type="float" class="form-control" id="valor_presente2"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti3">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes7"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t3">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo6" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="anualidad_valor_presente_anticipada();">
+                                                    Calcular valor
+                                                </button>
+
+                                                <div id='respuesta7'></div>
+                                            </form>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Anualidad con Valor Futuro(AVF)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_vfa">Valor Futuro (VF):</label>
+                                                    <input type="float" class="form-control" id="valor_futuro_1" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_3"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo_3" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Gradiente(constante G):</label>
+                                                    <input type="number" class="form-control" id="gradiente_3" required>
+                                                </div>
+                                                
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="anualidad_valor_futuro_gradiente_creciente();">
+                                                    Calcular valor
+                                                </button>
+
+                                                <div id='respuesta_3'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pagos/Cuotas (Cn)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a3">Anualiadad (A):</label>
+                                                    <input type="number" class="form-control" id="anualidad_3" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_vp">Número de la cuota (N):</label>
+                                                    <input type="float" class="form-control" id="cuota_1" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti">Variación de la cuota (G):</label>
+                                                    <input type="float" class="form-control" id="variacion_1" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="pagos_gradiente_creciente();">
+                                                    Calcular valor
+                                                </button>
+
+                                                <div id='respuesta_4'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                            aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Gradiente Lineal Decreciente</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Gradientes.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4"> Cuando la cantidad inicial se ve disminuida (-) se le llama gradiente geométrico decreciente
+                                    </p>
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Valor presente (VP)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a_1">Anualidad (A):</label>
+                                                    <input type="float" class="form-control" id="anualidad_11" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti_1">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_11"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo_11" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Gradiente(constante G):</label>
+                                                    <input type="number" class="form-control" id="gradiente_11" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="valor_presente_gradiente_decreciente();">
+                                                    Calcular valor
+                                                </button>
+                                                <div id='respuesta_11'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <br>
+                                    <br>
+
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Valor futuro (VF)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a_1">Anualidad (A):</label>
+                                                    <input type="float" class="form-control" id="anualidad_21" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti_1">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_21"required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo_21" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Gradiente(constante G):</label>
+                                                    <input type="number" class="form-control" id="gradiente_21" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="valor_futuro_gradiente_decreciente();">
+                                                    Calcular valor
+                                                </button>
+                                                <div id='respuesta_21'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                    <!-- parte comentada -->
+                                    <!-- <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Anualidad con Valor Presente(AVP)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_vp3">Valor Presente (VP):</label>
+                                                    <input type="float" class="form-control" id="valor_presente2"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti3">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes7"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t3">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo6" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="anualidad_valor_presente_anticipada();">
+                                                    Calcular valor
+                                                </button>
+
+                                                <div id='respuesta7'></div>
+                                            </form>
+                                        </div>
+                                    </div> -->
+
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Anualidad con Valor Futuro(AVF)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_vfa">Valor Futuro (VF):</label>
+                                                    <input type="float" class="form-control" id="valor_futuro_11" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_31"
+                                                        required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t">Tiempo(meses):</label>
+                                                    <input type="number" class="form-control" id="tiempo_31" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_t_1">Gradiente(constante G):</label>
+                                                    <input type="number" class="form-control" id="gradiente_31" required>
+                                                </div>
+                                                
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="anualidad_valor_futuro_gradiente_decreciente();">
+                                                    Calcular valor
+                                                </button>
+
+                                                <div id='respuesta_31'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pagos/Cuotas (Cn)</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a3">Anualiadad (A):</label>
+                                                    <input type="number" class="form-control" id="anualidad_31" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_vp">Número de la cuota (N):</label>
+                                                    <input type="float" class="form-control" id="cuota_11" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti">Variación de la cuota (G):</label>
+                                                    <input type="float" class="form-control" id="variacion_11" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="pagos_gradiente_decreciente();">
+                                                    Calcular valor
+                                                </button>
+
+                                                <div id='respuesta_41'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                            aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Amortización</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Amortizacion.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">La amortización, en la economía y contabilidad, hace referencia al proceso de distribución de gasto en el tiempo de un valor duradero. Así puede significar redimir o extinguir el capital de un préstamo o deuda o recuperar o compensar los fondos invertidos.​​
+                                    </p>
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Amortización Cuota Fija</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a3">Monto Inicial:</label>
+                                                    <input type="number" class="form-control" id="monto_1" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_vp">Tiempo (Meses):</label>
+                                                    <input type="float" class="form-control" id="tiempo_41" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_41" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="cuota_fija_amortizacion();">
+                                                    Calcular valor
+                                                </button>
+                                             
+                                                <div id='respuesta_51'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+      
+                                    <div class="card" style="width: 100%;">
+                                      
+                                        <div class="card-body">
+                                            <table class="table" id="lista_tabla">
+                                                <thead class="thead-dark">
+                                                  <tr>
+                                                    <th scope="col">Fecha</th>
+                                                    <th scope="col">Cuota</th>
+                                                    <th scope="col">Capital</th>
+                                                    <th scope="col">Interés</th>
+                                                    <th scope="col">Saldo</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                </tbody>
+                                              </table>
+                                              
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                            aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Capitalización</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Capitalizacion.jpg"
+                                        alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">La capitalización es el proceso de proyectar un capital inicial a un periodo de tiempo posterior, con base en un tipo de interés. La capitalización (simple o compuesta) es el proceso por el cual una determinada cantidad de capital aumenta de valor. A decir verdad, es una expresión matemática de un fenómeno real.
+                                    </p>
+                                    <div class="card" style="width: 100%;">
+
+                                        <div class="card-body">
+                                            <h5 class="card-title">Capitalización Interés Compuesto</h5>
+                                            <form action="">
+                                                <div class="form-group">
+                                                    <label for="lbl_a3">Monto Inicial:</label>
+                                                    <input type="number" class="form-control" id="monto_11" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_vp">Tiempo (Meses):</label>
+                                                    <input type="float" class="form-control" id="tiempo_51" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="lbl_ti">Tasa de interés (Decimal):</label>
+                                                    <input type="float" class="form-control" id="tasa_interes_51" required>
+                                                </div>
+                                                <br>
+                                                <button class="btn btn-success" style="width: 100%;" href="javascript:;"
+                                                    onclick="capitalizacion();">
+                                                    Calcular valor
+                                                </button>
+
+                                                <div id='respuesta_61'></div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                    
+                                    <div class="card" style="width: 100%;">
+                                      
+                                        <div class="card-body">
+                                            <table class="table" id="lista_tabla1">
+                                                <thead class="thead-dark">
+                                                  <tr>
+                                                    <th scope="col">Fecha</th>
+                                                    <th scope="col">Capital inicial</th>
+                                                    <th scope="col">Interes generado</th>
+                                                    <th scope="col">Capital final</th>
+
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                </tbody>
+                                              </table>
+                                              
+                                            
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
